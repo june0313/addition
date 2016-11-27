@@ -37,10 +37,24 @@ function getRandomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
 }
 
+function bindShortcut() {
+	$('body').keydown(function (event) {
+		// event.preventDefault();
+		var keyChar = String.fromCharCode(event.keyCode);
+		if (keyChar === 'R') {
+			initializeNumbers();
+		}
+
+		if (keyChar === 'A') {
+			$("#show-answer").trigger('click');
+		}
+	});
+}
 function bindEvents() {
 	bindMakeNumberEvent();
 	bindShowAnswerEvent();
 	bindSelectBoxEvent();
+	bindShortcut();
 }
 function bindMakeNumberEvent() {
 	// 숫자 만들기 버튼 클릭 이벤트
