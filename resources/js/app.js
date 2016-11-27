@@ -14,7 +14,7 @@ function initializeNumbers() {
 
 	for (var i = 0; i < numberCount; i++) {
 		// 1 ~ 9 까지의 랜덤한 숫자 생성
-		var number = getRandomNumber(1, 9);
+		var number = getRandomNumber(0, 9);
 		operands.append("<div class='operand'>" + number + "</div>");
 
 		// 연산자(+) 출력
