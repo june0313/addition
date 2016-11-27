@@ -16,13 +16,14 @@ function initializeNumbers() {
 		// 1 ~ 9 까지의 랜덤한 숫자 생성
 		var number = getRandomNumber(1, 9);
 		operands.append("<div class='operand'>" + number + "</div>");
-		$(".operand").fadeIn("slow").css("display","inline-block");
 
 		// 연산자(+) 출력
 		if (i !== numberCount - 1) {
 			operands.append("<span class='operator'>+</span class='ui label'>");
 		}
 	}
+
+	$(".operand").fadeIn("slow").css("display","inline-block");
 
 	// 총 합이 19를 넘어가면 다시 초기화 한다.
 	var answer = calculateAnswer();
