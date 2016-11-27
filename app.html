@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>숫자 더하기</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
+
+<script src="resources/js/jquery-3.1.1.min.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/semantic.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="resources/css/app.css">
+<div class="ui right aligned fluid container">
+    <div id="buttons" class="ui fluid container">
+        <select name="number-count" class="ui dropdown" id="count-select">
+            <option value="2">두 수 더하기</option>
+            <option value="3" selected>세 수 더하기</option>
+            <option value="4">네 수 더하기</option>
+        </select>
+
+        <button id="refresh" class="ui button primary">숫자 바꾸기</button>
+        <button id="show-answer" class="ui button green">정답 보기</button>
+    </div>
+
+    <div id="operands" class="operands ui fluid center aligned container">
+    </div>
+
+    <div id="answers" class="ui center aligned container">
+    </div>
+</div>
+
+</body>
+</html>

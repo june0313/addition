@@ -1,0 +1,32 @@
+.operand {
+    line-height: 220px;
+    vertical-align: middle;
+    font-size: 220px;
+    color: #595959;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    display: none;
+}
+
+.answer {
+    line-height: 220px;
+    font-size: 220px;
+    color: #FFFFFF;
+    padding: 20px;
+    background-color: #21BA45;
+    border-radius: 5px;
+    display: none;
+}
+
+.operator {
+    font-size: 150px;
+    line-height: 220px;
+    vertical-align: middle;
+    color: #929292;
+}
+
+.container {
+    margin-top: 0.5em;
+}
